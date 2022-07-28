@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const path = require('path')
 
 const app = express()
@@ -12,7 +13,7 @@ app.get("/", (req, res) => {
 
 //------------------------------------------------------------------------------
 
-const port = process.env.PORT || 4040
+const port = process.env.PORT || 4524
 
 app.listen(port, () => {
     console.log(`server jamming on port ${port}`)
